@@ -26,9 +26,11 @@ require("channels")
 import "bootstrap";
 
 // Internal imports, e.g:
-// import { initSelect2 } from '../components/init_select2';
+import { initEnvelope } from '../components/init_letter';
+
 
 document.addEventListener('turbolinks:load', () => {
+  initEnvelope();
   // Call your functions here, e.g:
   // initSelect2();
 });

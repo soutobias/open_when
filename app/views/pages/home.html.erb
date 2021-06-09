@@ -1,2 +1,22 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class='all'>
+  <div class="row">
+    <% @phrases.each do |phrase| %>
+      <div class="col-md-4 col-12">
+        <div class="letter">
+          <div class="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-paper"></div>
+            <div class="envelope-detail"></div>
+          </div>
+          <div class="paper">
+            <div class="paper-content">
+              <div class="paper-close">x</div>
+              <p><%= phrase.answer %></p>
+            </div>
+          </div>
+        </div>
+        <p class='text-center font-weight-bold pt-3 mt-3'><%= phrase.question.capitalize %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
