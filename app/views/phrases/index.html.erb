@@ -1,0 +1,24 @@
+<div class='all'>
+    <div class="container text-center justify-content-center align-middle">
+      <h1 class="font-weight-bold all-header">Vanessa</h1>
+      <h2 class="font-weight-bold all-header">Escrevi algumas cartas para você abrir em momentos específicos</h2>
+      <h2 class="font-weight-bold all-header">Abra uma carta quando você...</h2>
+    </div>
+</div>
+<div class='container'>
+  <div class="row">
+    <% @phrases.shuffle.each do |phrase| %>
+      <div class="col-md-3 col-12">
+        <%= link_to phrase_path(phrase), class: "letter p-4" do %>
+          <div class="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-paper"></div>
+            <div class="envelope-detail">
+              <p class='env text-center font-weight-bold' id='hide-letter'><%= phrase.question.capitalize %></p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

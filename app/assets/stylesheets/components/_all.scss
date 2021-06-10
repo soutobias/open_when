@@ -1,9 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
 .all {
-  background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('coringa.webp');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top;
-  background-size: 100%;
-  margin-top: 0;
+  background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('background_home.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 70px 0;
+  margin: 0;
+  color: rgba(10,10,10,0.9);
+  text-shadow: 2px 2px 20px rgba(200,200,200,0.9);
+  h1{
+    font-size: 70px;
+  }
+  h2{
+    font-size: 40px;
+  }
+
 }
 
+.all-header {
+  font-family: 'Dancing Script', cursive;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+.stage {
+  transform: translate(-50%, -50%);
+}
+
+.heart {
+  width: 100px;
+  height: 100px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+  &.is-active {
+    transition-duration: 1s;
+  }
+}
+
+
+.description {
+  p{
+    font-family: 'Mate SC', serif;
+    line-height: 1.8;
+    text-align: center;
+    white-space: pre-line;
+    font-size: 20px;
+  }
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+}

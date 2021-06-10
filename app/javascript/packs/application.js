@@ -27,10 +27,12 @@ import "bootstrap";
 
 // Internal imports, e.g:
 import { initEnvelope } from '../components/init_letter';
+import { clickHeart } from '../components/init_heart';
 
 
 document.addEventListener('turbolinks:load', () => {
   initEnvelope();
+  clickHeart();
   // Call your functions here, e.g:
   // initSelect2();
 });
