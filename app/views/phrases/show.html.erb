@@ -2,6 +2,9 @@
     <div class="container text-center justify-content-center align-middle">
       <h1 class="font-weight-bold all-header">Vanessa</h1>
       <h2 class="font-weight-bold all-header">Você abriu essa carta...</h2>
+      <% if @value %>
+        <h2 class="font-weight-bold all-header">Porque você quis. Então, eu abri para você uma carta aleatória, para você ler...</h2>
+      <% end %>
       <h2 class="font-weight-bold all-header"><%= @phrase.sentence.capitalize %></h2>
     </div>
 </div>

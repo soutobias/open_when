@@ -7,6 +7,16 @@ class PhrasesController < ApplicationController
   end
 
   def show
+    if @phrase.question.downcase == 'quiser!'
+      @value = true
+      offset = rand(Phrase.count)
+      if offset == 0
+        offset == 1
+      end
+      @phrase = Phrase.offset(offset).first
+    else
+      @value = false
+    end
   end
 
   private
