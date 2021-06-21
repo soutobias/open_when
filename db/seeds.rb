@@ -20,7 +20,7 @@ tables.each do |row|
   files = Dir.glob(Rails.root.join('lib', 'seeds', row['photos']).to_s + '/*.jpg')
   files.each do |file|
     filepath = File.open(Rails.root.join('lib', 'seeds', row['photos'], file))
-    phr.photo.attach(io: filepath, filename: "1.jpg", content_type: 'image/jpg')
+    phr.photos.attach(io: filepath, filename: "1.jpg", content_type: 'image/jpg')
   end
   phr.save!
 end
