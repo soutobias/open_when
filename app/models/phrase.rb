@@ -1,3 +1,3 @@
 class Phrase < ApplicationRecord
-  has_many_attached :photo
+  has_many_attached :photos
 end

@@ -1,0 +1,13 @@
+<div class="m-5">
+  <h1 class="font-weight-bold text-center p-3 h1">INSERIR CARTA</h1>
+  <%= simple_form_for @phrase, html: { class: "results row justify-content-around"} do |f| %>
+    <div class='col-12'>
+      <%= f.input :question, label: "Qual é a pergunta?" %>
+      <%= f.input :answer, label: "Resposta?" %>
+      <%= f.input :link, label: "Link?" %>
+      <%= f.input :sentence, label: "Sentença?" %>
+      <%= f.input :photos, input_html: { multiple: true } %>
+      <%= f.button :submit, "NOVA CARTA", class: "btn btn-outline-danger m-2"%>
+    </div>
+  <% end %>
+</div>
