@@ -76,7 +76,7 @@ class PhrasesController < ApplicationController
 
   def phrase_params
     params.require(:phrase).permit(
-      :question, :answer, :link, :sentence
+      :question, :answer, :link, :sentence, photos: []
       )
   end
 
